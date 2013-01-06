@@ -21,19 +21,24 @@ $reset.click(new_game);
 $plus.click(add_disk);
 $minus.click(remove_disk);
 
+// Ao passar mouse sobre a interrogação, são exibidas as regras do jogo
 $("#help").hover(
     function() { $rules.css("display", "block"); },
     function() { $rules.css("display", "none");  }
 );
 
+// Botão "OK" da janela modal que aparece quando há vitória
 $("#close").click(function() {
     $("#modal").css("display", "none");
     new_game();
 });
 
+// Definição do tamanho do fundo preto que aparece sob a janela modal de vitória
 $("#mask").css("height", $(document).height()).css("width", $(window).width());
 
+// Inicialização do jogo
 new_game();
+
 
 function new_game() {
     current_moves = 0;
@@ -134,8 +139,6 @@ function check_winner() {
         $("#final_n").html($n.html());
         $("#final_moves").html(current_moves);
         $("#final_time").html($timer.html());
-        var average = (current_seconds / current_moves).toFixed(2);
-        $("#final_average").html(average);
 
         $("#modal").css("display", "block");
         
