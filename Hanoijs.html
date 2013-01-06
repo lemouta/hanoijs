@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hanoijs</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+</head>
+<body>
+
+<div id="container">
+
+  <img id="help" src="img/help.png" alt="Ajuda" />
+
+  <div id="rules">
+    <h2>Objetivo: Passar os discos da Torre A para a Torre C.</h2>
+    <ol>
+      <li>Somente um disco pode ser movido por vez.</li>
+      <li>Um disco não pode ser colocado sobre outro menor que ele.</li>
+    </ol>
+  </div>
+  
+  <h1 id="site_name">Hanoijs</h1>
+   
+  <div id="towers">
+
+    <span id="moveAC" class="move move_left" title="Mover de A para C"></span>
+
+    <div id="towerA" class="tower">
+      <div class="disks"></div>
+      <span class="name">A</span>
+    </div>
+
+    <span id="moveBA" class="move move_left" title="Mover de B para A"></span>
+    <span id="moveAB" class="move move_right" title="Mover de A para B"></span>
+
+    <div id="towerB" class="tower">
+      <div class="disks"></div>
+      <span class="name">B</span>
+    </div>
+
+    <span id="moveCB" class="move move_left" title="Mover de C para B"></span>
+    <span id="moveBC" class="move move_right" title="Mover de B para C"></span>
+
+    <div id="towerC" class="tower">
+      <div class="disks"></div>
+      <span class="name">C</span>
+    </div>
+
+    <span id="moveCA" class="move move_right" title="Mover de C para A"></span>
+
+  </div>
+
+  <div id="info">
+    <span id="reset"></span>
+    <p>Discos: <span id="n"></span> <span id="minus"></span> <span id="plus"></span></p>
+    <p>Movimentos: <span id="moves"></span></p>
+    <p>Tempo: <span id="timer"></span></p>
+  </div>
+
+  <div id="footer">Desenvolvido por <em title="leandro [arroba] mouta [ponto] net">Leandro Mouta</em> no primeiro final de semana de 2013</div>
+   
+</div>
+
+<div id="modal">
+  <div id="congrats">
+    <h1>Parabéns! Você conseguiu!</h1>
+    <p>Você moveu os <strong><span id="final_n"></span></strong> discos utilizando <strong><span id="final_moves"></span></strong> movimentos em <strong><span id="final_time"></span></strong>.</p>
+    <p>Uma média de 1 movimento a cada <span id="final_average"></span> segundos.</p>
+    <p>Obrigado por jogar o <strong>Hanoijs</strong>.</p>
+    <p><span id="close" class="button">OK</span></p>
+  </div>
+  <div id="mask"></div>
+</div>
+
+<script type="text/javascript" src="js/Hanoijs.js"></script>
+</body>
+</html>

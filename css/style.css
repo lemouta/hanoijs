@@ -1,0 +1,60 @@
+@import url("reset.css");
+@import url(http://fonts.googleapis.com/css?family=Cinzel:400,700,900);
+
+body {background: #e5e5e5;color: #555;font: 14px "Cinzel", Georgia, serif;}
+h1, h2, h3, h4, h5, h6 {font-weight: bold;margin-bottom: 10px;}
+p {margin: 10px 0;}
+ol {list-style: decimal;}
+li {margin-left: 20px;}
+strong {font-weight: bold;}
+em {font-style: italic;}
+
+#help {position: absolute;right: 0;top: 0;}
+#rules {background: #fff;border: 1px solid #000;display: none;padding: 10px;position: absolute;right: 0;top: 30px;z-index: 2;}
+#rules h2 {font-size: 16px;}
+#container {margin: 40px auto 0;position: relative;width: 900px;}
+#site_name {font-size: 36px;letter-spacing: 2px;margin-bottom: 40px;text-align: center;}
+#towers {margin-bottom: 60px;text-align: center;}
+#info {font-size: 20px;margin-left: 200px;}
+#n, #moves, #timer {font-weight: bold;}
+#reset {background: url("../img/reset.png");float: right;height: 70px;margin: 10px 300px 0 0;width: 70px;}
+#reset:hover {cursor: pointer;}
+#reset:active {background-position: 0 70px;}
+#plus, #minus {cursor: pointer;display: inline-block;height: 15px;width: 15px;}
+#plus {background: url("../img/plus.png");}
+#minus {background: url("../img/minus.png");margin-left: 10px;}
+#plus.deactivate {background-position: 0 15px;cursor: default;}
+#minus.deactivate {background-position: 0 15px;cursor: default;}
+
+#modal {display: none;}
+#mask {background: #333;left: 0;opacity: 0.9;position: absolute;top: 0;z-index: 1;}
+#congrats {background: #fff url("../img/congrats.png") bottom right no-repeat;border: 1px solid #000;padding: 20px 100px 20px 20px;position: absolute;z-index: 2;}
+#congrats h1 {font-size: 20px;text-align: center;}
+#congrats p {margin: 20px 0 0;}
+#congrats p:last-child {text-align: center;}
+
+#footer {font-size: 11px;margin-top: 40px;text-align: right;}
+
+.tower {background: url("../img/tower.png");display: inline-block;height: 264px;margin: 0 30px;position: relative;width: 166px;}
+.tower .name {bottom: -30px;color: #000;font-size: 20px;font-weight: bold;left: 75px;position: absolute;}
+.disks {position: absolute;bottom: 15px;width: 100%;}
+.disk {border: 1px solid #000;height: 20px;margin: 2px auto;}
+.move {bottom: 120px;display: inline-block;height: 25px;position: relative;width: 17px;}
+.move_left {background: url("../img/move_left.png");}
+.move_right {background: url("../img/move_right.png");}
+.move.deactivate {background-position: 0 25px;}
+.move.deactivate:hover {cursor: default;}
+.move:hover {cursor: pointer;}
+.button {background: #006dcc;border-radius: 4px;color: #fff;font-weight: bold;padding: 4px 6px;}
+.button:hover {cursor: default;}
+.button:active {background: #349fd6;}
+
+.red {background: red;}
+.yellow {background: yellow;}
+.blue {background: blue;}
+.green {background: green;}
+.gray {background: gray;}
+.purple {background: purple;}
+.white {background: white;}
+.black {background: black;}
+.orange {background: orange;}
