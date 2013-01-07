@@ -12,7 +12,7 @@ em {font-style: italic;}
 #container {margin: 40px auto 0;position: relative;width: 900px;}
 
 #help {position: absolute;right: 0;top: 0;}
-#rules {background: #fff;border: 1px solid #000;display: none;padding: 10px;position: absolute;right: 0;top: 30px;z-index: 2;}
+#rules {background: #fff;border: 1px solid #000;box-shadow: 0 0 5px 2px #888;display: none;padding: 10px;position: absolute;right: 0;top: 30px;z-index: 2;}
 #rules h2 {font-size: 16px;}
 
 #site_name {font-size: 36px;letter-spacing: 2px;margin-bottom: 40px;text-align: center;}
